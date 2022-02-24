@@ -1,1 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap');
+
+*, *::before, *::after{box-sizing:border-box}
+
+:root{
+  --black: #1e1e1e;
+  --yellow: #F4D504;
+  --blue: #6998ab;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Rubik', sans-serif;
+}
+
+h1{
+  background-color: var(--black);
+  color: var(--blue);
+  padding:1rem;
+}
+
+table{
+  width:90%;
+  margin:auto;
+  border:2px solid var(--black)
+}
+td{
+  text-align:center;
+}
+.error{
+  color:#ca3427;
+  font-size:2rem;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+nav{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+nav a{
+  text-decoration: none;
+  display:block;
+  margin:.5rem;
+  background-color:var(--black);
+  color:var(--yellow);
+  padding:.5rem 1rem;
+  border-radius:8px;
+}
+nav a:hover{
+  background-color:var(--yellow);
+  color:var(--black);
+}
+
+
 
