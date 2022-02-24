@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block body %}
+  <form action="/exercise" method="post">
+    <input type="text" name="first" id="first" autofocus autocomplete="off" placeholder="First Name">
+    <input type="text" name="last" id="last" autocomplete="off" placeholder="Last Name">
+    <input type="submit" value="Login">
+  </form>
+  <img src="/static/equip2.jpg" alt="Workout equipment" width="50%">
+{% endblock %}

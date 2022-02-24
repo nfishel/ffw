@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block body %}
+  <table>
+    
+    <tr>
+      <th>Date</th>
+      <th>Exercise</th>
+      <th># of Reps</th>
+    </tr>
+    {% for workout in workout_list %}
+      <tr>
+        <td>{{ workout['ex_date'] }}</td>
+        <td>{{ workout.exercise }}</td>
+        <td>{{ workout.reps }}</td>
+      </tr>
+    {% endfor %}    
+  </table>
+
+{% endblock %}
+
